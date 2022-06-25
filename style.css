@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Roboto',sans-serif;
+}
+
+body{
+	background-color:AliceBlue;
+}
+
+div.container{
+	height:100vh;
+	padding:18px;
+}
+
+h1.title{
+	text-align:center;
+	font-weight:bolder;
+	color:MidnightBlue;
+}
+
+div.operations{
+	display:flex;
+	padding:9px 0;
+	column-gap:9px;
+}
+
+div.operations div.button{
+	width:50%;
+	padding:9px;
+	text-align:center;
+	font-weight:bolder;
+	color:MidnightBlue;
+	background-color:LightSteelBlue;
+	border:1px solid MidnightBlue;
+}
+
+div.operations div.button:active{
+	color:AliceBlue;
+	background-color:MidnightBlue;
+	border:1px solid LightSteelBlue;
+}
+
+ul.tasks{
+	list-style:none;
+}
+
+li.task{
+	font-size:1.2em;
+	padding:9px;
+	border-top:1px solid LightSteelBlue;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+li:last-child.task{
+	border-bottom:1px solid LightSteelBlue;
+}
+
+li.task.checked{
+	color:LightSteelBlue;
+	text-decoration:line-through;
+}
